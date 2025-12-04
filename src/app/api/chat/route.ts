@@ -16,11 +16,11 @@ export async function POST(req: Request) {
     });
 
     const mcpTools = await mcpClient.tools();
-    const resourceData = await mcpClient.readResource({
-        uri: 'ui://widget/content-template.html',
-    });
+    // const resourceData = await mcpClient.readResource({
+    //     uri: 'ui://widget/content-template.html',
+    // });
 
-    console.log("resourceData", resourceData)
+    // console.log("resourceData", resourceData)
 
     const localTools = {
         getWeather: tool({
